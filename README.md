@@ -91,7 +91,72 @@ chmod +x acarsdec
 ./acarsdec -f ../test.wav
 ```
 
+<details>
+ 
+<summary>Output</summary>
+
+```
+[#2 (L:-23.0 E:0)  --------------------------------
+Mode : E Label : 5V Id : 4 Nak
+Aircraft reg: PH-BXR Flight id: KL1681
+No: S53A
+Reassembly: skipped
+
+[#2 (L:-19.1 E:0)  --------------------------------
+Mode : E Label : Q0 Id : 6 Nak
+Aircraft reg: LN-DYY Flight id: DY083J
+No: S47A
+Reassembly: skipped
+
+[#4 (L:-17.4 E:0)  --------------------------------
+Mode : 2 Label : Q0 Id : 4 Nak
+Aircraft reg: LN-DYY Flight id: DY083J
+No: S46A
+Reassembly: skipped
+
+[#1 (L: -8.5 E:0)  --------------------------------
+Mode : G Label : H1 Id : 3 Nak
+Aircraft reg: F-GTAE Flight id: AF7728
+No: D65C
+Sublabel: DF
+Reassembly: out of sequence
+00000/V206,05,124,183,02,00,00000/V3XX,XX,XXX,XXX,XXXX/V4XX,XX,XXX,XXX,XXXX/V5XX,XX,XXX,XXX,XXXX/V6XX,XX,XXX,XXX,XXXX/V7044,078,00081,22222222222111/V8042,083,00061,22222222222111/
+
+[#1 (L:-18.6 E:0)  --------------------------------
+Mode : x Label : _d Id : A Ack : 5
+Aircraft reg: LN-DYY 
+Reassembly: skipped
+
+[#3 (L: -4.6 E:0)  --------------------------------
+Mode : 2 Label : _d Id : 0 Ack : W
+Aircraft reg: G-DBCK Flight id: BA031T
+No: S64A
+Reassembly: skipped
+
+[#3 (L: -4.3 E:0)  --------------------------------
+Mode : E Label : Q0 Id : 9 Nak
+Aircraft reg: G-DBCK Flight id: BA031T
+No: S63A
+Reassembly: skipped
+exiting ...
+```
+
+</details>
+
+
 - Run acarsdec with rtlsdr on freq 131.550 Mhz
 ```
 ./acarsdec -r 0 131.550
 ```
+
+<details>
+ 
+<summary>Output</summary>
+
+```
+Found Rafael Micro R820T tuner
+Setting sample rate: 2.0000 MS/s
+Exact sample rate is: 2000000.052982 Hz
+```
+
+</details>
