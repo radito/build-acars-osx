@@ -84,13 +84,14 @@ make
 sudo make install
 ```
 
-4. Test acarsdec
+## Test acarsdec
+- Test with WAV files
 ```
 chmod +x acarsdec
 ./acarsdec -f ../test.wav
 ```
 
-5. Run acarsdec with rtlsdr on freq 131.550 Mhz
+- Run acarsdec with rtlsdr on freq 131.550 Mhz
 ```
 ./acarsdec -r 0 131.550
 ```
